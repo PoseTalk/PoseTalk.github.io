@@ -1,1 +1,336 @@
-coming soon! Stay tuned!
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="PoseTalk">
+  <meta property="og:title" content="PoseTalk"/>
+  <meta property="og:description" content="PoseTalk: Text-and-Audio-based Pose Control and Motion Refinement for One-Shot Talking Head Generation"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/video_t1.png" />
+  <meta property="og:image:width" content="2412"/>
+  <meta property="og:image:height" content="1394"/>
+
+
+  <meta name="twitter:title" content="PoseTalk">
+  <meta name="twitter:description" content="PoseTalk:  Text-and-Audio-based Pose Control and Motion Refinement for One-Shot Talking Head Generation">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/video_t1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Image-to-Video">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>PoseTalk</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <h1 class="title is-1 publication-title">PoseTalk: Consistent and Controllable Image-to-Video Synthesis for One-Shot Talking Head Generation</h1>
+                <div class="is-size-5 publication-authors">
+                  <!-- Paper authors -->
+                  <span class="author-block">Under Review</span>
+                </div>
+                <div class="is-size-5 publication-authors">
+                    <!-- Paper authors -->
+                    <span class="author-block">Anonymous Authors</span>
+                </div>
+
+                <div class="column has-text-centered">
+                    <div class="publication-links">
+                        <!-- Arxiv PDF link -->
+                        <span class="link-block">
+                            <a href="" 
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </span>
+                            <span>Paper</span>
+                            </a>
+                        </span>
+    
+                        <!-- Video link -->
+                        <span class="link-block">
+                            <a href="https://posetalk.github.io" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </span>
+                            <span>video</span>
+                            </a>
+                        </span>
+    
+                        <!-- Github link -->
+                        <span class="link-block">
+                            <a href="https://github.com/PoseTalk/5699" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                            <i class="fab fa-github"></i>
+                            </span>
+                            <span>Code</span>
+                            </a>
+                        </span>
+    
+                        <!-- ArXiv abstract Link -->
+                        <span class="link-block">
+                            <a href="https://posetalk.github.io" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="ai ai-arxiv"></i>
+                            </span>
+                            <span>arXiv</span>
+                            </a>
+                        </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="assets/images/teaser1.jpg" alt="MY ALT TEXT">
+          <h2 class="content has-text-justified">
+            Key features of our PoseTalk. Our method can synthesize talking face videos from an image, the driving audio, and driving poses. The driving poses can be sampled from fixed poses (the source image), reference poses (from other talking videos), or textand-audio-based generated poses.
+         </h2>
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+                While previous audio-driven talking head generation (THG) methods generate head poses from driving audio, the generated poses or lips cannot match the audio well or are not editable. In this study, we propose \textbf{PoseTalk}, a THG system that can freely generate lip-synchronized talking head videos with free head poses conditioned on text prompts and audio. The core insight of our method is using head pose to connect visual, lingual, and audio signals. First, we propose to generate poses from both audio and text prompts, where the audio offers short-term variations and rhythm correspondence of the head movements and the text prompts describe the long-term semantics of head motions. To achieve this goal, we devise a Pose Latent Diffusion (PLD) model to generate motion latent from text prompts and audio cues in a pose latent space. Second, we observe a loss-imbalance problem that the loss for the lip region contributes less than 4\% of the total reconstruction loss caused by both pose and lip, which in turn makes optimization lean towards head movements rather than lip shapes. To address this issue, we propose a refinement-based learning strategy to synthesize natural talking videos using two cascaded networks, \textit{i.e.}, CoarseNet, and RefineNet. The CoarseNet estimates coarse motions to produce animated images in novel poses and the RefineNet focuses on learning finer lip motions by progressively estimating lip motions from low-to-high resolutions, yielding improved lip-synchronization performance. Experiments demonstrate our pose prediction strategy achieves better pose diversity and realness compared to text-only or audio-only, and our video generator model outperforms state-of-the-art methods in synthesizing talking videos with natural head motions. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Method</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="assets/images/method.jpg" alt="MY ALT TEXT"/>
+          <h2 class="content has-text-justified">
+            The overview of our pose diffusion and talking face video generation. (a) During training, the pose latent diffusion model is conditioned on the pose embedding learned by VAE. The denoising process is conditioned on the text embedding, time stamps, and audio features. (b) Given a source image, the audio features, and the extracted or predicted pose/gaze features, the video generator gradually estimates finer motions and lip-synced talking videos. (c) Our inference pipeline consists of two modules: 1) The Pose Generation module generates diverse poses guided by the audio features and text prompts. 2) The Refinementbased Video Generator synthesizes lip-synchronized talking videos given the input audio features, poses, and source frame. It is worth noting that our poses can also be sampled from template poses. 
+         </h2>
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Video Results</h2>
+        <h2 class="title is-4">Comparisons</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="assets/videos/compare-baseline/baseline-hdtf1.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="assets/videos/compare-baseline/baseline-mead1.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="assets/videos/compare-baseline/baseline-mead2.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <h2 class="content has-text-centered">
+          PoseTalk achieves high lip-sync quality and comparable or better visual quality compared to the state-of-the-art methods. 
+      </div>
+    </div>
+</section>
+<!-- End video carousel -->
+  
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-4">The impact of Motion Refinement</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="assets/videos/motion-refinement-ablation/motion-refinement-demo1.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="assets/videos/motion-refinement-ablation/motion-refinement-demo2.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <h2 class="content has-text-centered">
+          The audios are <b>not paired</b> with the source identity. 
+          <br>PoseTalk + GFPGAN achieves better or comparable visual quality compared to the state-of-the-art methods. </h2>
+      </div>
+    </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-4">The impact of Text Prompts</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="assets/videos/pose-generation-ablation/audo-variation-EricPaul.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="assets/videos/pose-generation-ablation/text-variation.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <h2 class="content has-text-centered">
+          The audios are <b>not paired</b> with the source identity. 
+          <br>PoseTalk + GFPGAN achieves better or comparable visual quality compared to the state-of-the-art methods. </h2>
+      </div>
+    </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="assets/images/quantitative-hdtf-mead.jpg" alt="MY ALT TEXT"/>
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+  
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </p>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+  bulmaCarousel.attach('#results-carousel11', {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      infinite: true,
+      autoplay: false,
+  });
+  bulmaCarousel.attach('#results-carousel22', {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      infinite: true,
+      autoplay: false,
+  });
+  bulmaCarousel.attach('#results-carousel33', {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      infinite: true,
+      autoplay: false,
+  });
+  </script>
+  
+  <!-- Statcounter tracking code -->
+    
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  
+      <!-- End of Statcounter Code -->
+  
+</body>
+</html>
